@@ -1,0 +1,1 @@
+console.log("Hello, World!"); /* test to make sure I linked javascript to HTML file correctly! */ 
