@@ -12,19 +12,28 @@ function playRound(playerSelection, computerSelection) {
             return "The game is a tie!";
         } else if (computerSelection == "Paper") {
             return "Sorry, you have lost!";
-        } else {
+        } else {    // Scissors outcome
             return "You have won the game!";
         }
     } else if (playerSelection == "Paper") {
         if (computerSelection == "Rock") {
             return "You have won the game!";
+        } else if (computerSelection == "Paper") {
+            return "The game is a tie!";
+        } else {    // Scissors outcome
+            return "Sorry, you have lost the game!";
+        }
+    } else {    // If playerSelection is scissors
+        if (computerSelection == "Rock") {
+            return "Sorry, you have lost the game!";
+        } else if (computerSelection == "Paper") {
+            return "You have won the game!";
+        } else {
+            return "The game is tied!";
         }
     }
 }
 
-
-// Testing to make sure we get random string of rock, paper, or scissors 
-// console.log(getComputerChoice());
 
 // Testing to make sure we're playing the game correctly with hardcode input of playerSelection
 const playerSelection = "Rock";
